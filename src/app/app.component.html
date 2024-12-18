@@ -1,0 +1,30 @@
+<div class="card">
+    <p-toolbar 
+        styleClass="bg-gray-900 shadow-2" 
+        [style]="{ 'background-image': 'linear-gradient(to right, #FFB6C1, #A3D8FF, #FFD700)', 'border-radius': '0' }">
+        <ng-template pTemplate="start">
+            <div class="flex align-items-center gap-3">
+                <button 
+                    class="p-link inline-flex justify-content-center align-items-center text-white h-3rem w-3rem border-circle hover:bg-white-alpha-10 transition-all transition-duration-200"
+                    [routerLink]="['/']"> 
+                    <i class="pi pi-home text-2xl"></i>
+                </button>
+                <img src="https://primefaces.org/cdn/primeng/images/primeng.svg" />
+            </div>
+        </ng-template>
+        <ng-template pTemplate="center">
+            <!-- No hay elementos aquí por ahora -->
+        </ng-template>
+        <ng-template pTemplate="end">
+            <div class="flex align-items-center gap-2">
+                <p-avatar 
+                    image="https://i.pinimg.com/236x/9f/55/5c/9f555c63e51dd749f45f3f8e7dcb9764.jpg" 
+                    shape="circle" />
+                <span class="font-bold text-bluegray-50">
+                    Padme :3
+                </span>
+            </div>
+        </ng-template>
+    </p-toolbar>
+</div>
+<router-outlet></router-outlet> 
